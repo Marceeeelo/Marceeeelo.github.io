@@ -8,6 +8,7 @@ const datosBotones = [];
 const seccion1 = document.getElementById('seccion1');
 const seccion2 = document.getElementById('seccion2');
 const seccion3 = document.getElementById('seccion3');
+const seccion4 = document.getElementById('seccion4');
 
 function guardarIdentificacion() {
     numeroIdentificacion = document.getElementById('identificacion').value;
@@ -70,6 +71,13 @@ function generarID() {
 }
 
 function enviarVoto() {
+    // Ocultar la Sección 2
+    seccion2.style.display = 'none';
+    // Mostrar la Sección 3
+    seccion4.style.display = 'block';
+}
+
+function enviarVoto2() {
     const botonesMarcados = document.querySelectorAll('.marcado');
 
     botonesMarcados.forEach((boton) => {
@@ -83,7 +91,7 @@ function enviarVoto() {
         datosBotones.push(datos);
     });
     // Ocultar la Sección 2
-    seccion2.style.display = 'none';
+    seccion4.style.display = 'none';
     // Mostrar la Sección 3
     seccion3.style.display = 'block';
 }
