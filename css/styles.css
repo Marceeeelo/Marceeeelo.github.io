@@ -41,6 +41,12 @@ section {
     padding: 20px; /* Espaciado interior */
 }
 
+.input-container{
+    width: 100%; /* Ancho del campo de texto */    
+    align-items: center; /* Tamaño de fuente */  
+    max-width: 420px; /* Ancho máximo para evitar que se extienda demasiado */
+}
+
 #identificacion {
     border: 2px solid lightgray; /* Borde de color gris claro */
     border-radius: 10px; /* Esquinas redondeadas */    
